@@ -1,5 +1,12 @@
 #!/bin/bash
 
+## MKDIR & CD ##
+mkcd ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
+
 ## HELP FILE ##
 helpme () {
       echo ''
